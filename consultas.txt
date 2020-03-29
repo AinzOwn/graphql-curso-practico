@@ -1,0 +1,41 @@
+mutation {
+  deleteUser (_id: "5e803093a4e4991b518157b0") {
+    _id
+    firstName
+  }
+}
+
+mutation {
+  updateUser (
+    _id: "5e8035023f28a61dde4f70a7",
+    input: {
+      firstName: "Juan"
+      lastName: "JuegaJuegos"
+    }
+  ) {
+    _id
+    firstName
+    lastName
+    age
+  }
+}
+
+{
+  Users {
+    _id
+    firstName
+  }
+}
+
+mutation {
+  createUser (input: {
+    firstName: "Ded"
+    lastName: "Revil"
+    age: 32
+  }) {
+    _id
+    firstName
+    lastName
+    age
+  }
+}
